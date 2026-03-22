@@ -398,7 +398,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-st.title("⚡ BNG Pipeline")
+st.title("BNG Pipeline")
 st.caption("Upload CSV/XLSX → Auto Process → Download → WP Admin Import")
 st.divider()
 
