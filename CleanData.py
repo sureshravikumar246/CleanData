@@ -372,12 +372,29 @@ st.markdown("""
     [data-testid="stAppViewContainer"],
     [data-testid="stHeader"] {
         background-color: #ffffff !important;
-        color: #ffffff !important;
+        color: #111827 !important;
     }
-    p, span, label, div, h1, h2, h3, li { color: #000000 !important; }
-    .stMetric label, [data-testid="stMetricValue"] { color: #ffffff !important; }
+    p, span, label, div, h1, h2, h3, li { color: #111827 !important; }
+    .stMetric label, [data-testid="stMetricValue"] { color: #111827 !important; }
+
+    /* File uploader — force white/light theme */
     [data-testid="stFileUploader"] { background-color: #f8f9fb !important; }
-    input, textarea { color: #ffffff !important; background: #ffffff !important; }
+    [data-testid="stFileUploaderDropzone"] {
+        background-color: #f8f9fb !important;
+        border: 1.5px dashed #d1d5db !important;
+        color: #111827 !important;
+    }
+    [data-testid="stFileUploaderDropzone"] * { color: #111827 !important; }
+    [data-testid="stFileUploaderDropzone"] button {
+        background-color: #ffffff !important;
+        color: #374151 !important;
+        border: 1px solid #d1d5db !important;
+    }
+    [data-testid="stFileUploaderDropzoneInstructions"] { color: #111827 !important; }
+    [data-testid="stFileUploaderDropzoneInstructions"] * { color: #6b7280 !important; }
+
+    [data-testid="stExpander"] { background-color: #f8f9fb !important; border: 1px solid #e5e7eb !important; }
+    input, textarea { color: #111827 !important; background: #ffffff !important; }
 </style>
 """, unsafe_allow_html=True)
 
